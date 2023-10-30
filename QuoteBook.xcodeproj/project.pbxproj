@@ -59,12 +59,11 @@
 		F1A9C8B92AF01F3800A9D319 /* QuoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				F1A9C8D32AF04A7900A9D319 /* Data */,
 				F1A9C8CA2AF0212700A9D319 /* Views */,
 				F1A9C8C92AF0211B00A9D319 /* ViewModel */,
 				F1A9C8C82AF0210800A9D319 /* Model */,
 				F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */,
-				F1A9C8BC2AF01F3800A9D319 /* ContentView.swift */,
-				F1A9C8CF2AF02BE500A9D319 /* Data.swift */,
 				F1A9C8BE2AF01F3B00A9D319 /* Assets.xcassets */,
 				F1A9C8C02AF01F3B00A9D319 /* Preview Content */,
 			);
@@ -98,9 +97,18 @@
 		F1A9C8CA2AF0212700A9D319 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1A9C8BC2AF01F3800A9D319 /* ContentView.swift */,
 				F1A9C8D12AF03FF600A9D319 /* HumanCircleView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F1A9C8D32AF04A7900A9D319 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1A9C8CF2AF02BE500A9D319 /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
