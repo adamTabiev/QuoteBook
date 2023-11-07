@@ -8,22 +8,9 @@
 import SwiftUI
 
 struct HumanCommentView: View {
-    @StateObject var vm = HumanViewModel()
     
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(vm.humans) { human in
-                        CommentContainer(viewState: CommentContainer.ViewState(
-                            name: human.name,
-                            destination: Text("Biography View"), briefBio: human.briefBio,
-                            comment: human.comment)
-                        )
-                    }
-                }
-            }
-        }
+        Text("hello")
     }
 }
 

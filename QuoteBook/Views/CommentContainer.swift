@@ -15,51 +15,57 @@ struct CommentContainer<Destination: View>: View {
         let briefBio: String
         let comment: [String]
     }
+    
     let viewState: ViewState
     
     var body: some View {
         VStack {
-            Image(viewState.imageName)
-                .resizable()
-                .cornerRadius(20)
-                .aspectRatio(contentMode: .fit)
-            Spacer()
+            HumanCircleView(image: Image(viewState.imageName), size: 250)
+                .padding(.top)
             
             NavigationLink(destination: viewState.destination) {
                 Text(viewState.name)
                     .font(.title)
             }
-            Spacer()
+            .frame(width: 350, height: 100)
             
             Text(viewState.briefBio)
                 .font(.subheadline)
-                .padding()
-            Divider()
-            Text(viewState.comment.randomElement() ?? "Error")
-                .font(.headline)
                 .multilineTextAlignment(.center)
-                .padding()
+                .padding(.horizontal)
+                .frame(width: 350, height: 50)
+            
+            Divider()
+            
+            Text(viewState.comment.randomElement() ?? "Error")
+                .padding(.horizontal)
+                .font(.title2)
+                .font(.callout)
+                .fontWeight(.bold)
+                .multilineTextAlignment (.center)
+                .monospaced()
+                .frame(width: 350, height: 250)
         }
-        .frame(width: 300, height: 600)
-        .overlay(RoundedRectangle(cornerRadius: 20).stroke(.orange, lineWidth: 4))
-        //  .cornerRadius(20)
-        .shadow(radius: 10)
+       // .background(Color.black.opacity(0.1))
+        .cornerRadius(18)
+        .overlay(
+            RoundedRectangle(cornerRadius: 18)
+                .stroke(Color(.gray), lineWidth: 0.2)
+        )
         .padding()
-        
+        .shadow(radius: 20)
     }
 }
 
 #Preview {
     NavigationView {
         CommentContainer(viewState: CommentContainer.ViewState(
-            name: "Карл Саган",
+            name: "Платон",
             destination: Text("Biography View"),
-            briefBio: "Американский астрофизик и популяризатор науки",
-            comment: [
-                "Мы звёздная пыль, исследующая звёзды.",
-                "Наш дом — это вселенная.",
-                "Есть места, где уместно спорить о деталях, но не оценивать значимость. Это как спорить, сколько километров до середины океана."
-            ]
+            briefBio: "древнегреческий философ 5 век до н.э., ученик Сократа, учитель Аристотеля.",
+            comment: ["Воспитание есть усвоение хороших привычек.",
+                      "Стараясь о счастье других, мы находим свое собственное.",
+                      "Наилучшее воспитание молодых людей, да и самих себя, заключается не во внушениях, а в явном для всех осуществлении в собственной жизни того, что внушается другому."]
         ))
     }
 }
