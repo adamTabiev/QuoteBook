@@ -27,7 +27,7 @@ struct CommentContainer<Destination: View>: View {
                 Text(viewState.name)
                     .font(.title)
             }
-            .frame(width: 350, height: 100)
+            .frame(width: 350, height: 50)
             
             Text(viewState.briefBio)
                 .font(.subheadline)
@@ -46,14 +46,13 @@ struct CommentContainer<Destination: View>: View {
                 .monospaced()
                 .frame(width: 350, height: 250)
         }
-       // .background(Color.black.opacity(0.1))
+        .background(Color.white)
         .cornerRadius(18)
         .overlay(
             RoundedRectangle(cornerRadius: 18)
                 .stroke(Color(.gray), lineWidth: 0.2)
         )
         .padding()
-        .shadow(radius: 20)
     }
 }
 
@@ -69,3 +68,4 @@ struct CommentContainer<Destination: View>: View {
         ))
     }
 }
+

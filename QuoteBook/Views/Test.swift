@@ -38,7 +38,7 @@ struct Test: View {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(Color(.gray), lineWidth: 4)
                 )
-                .shadow(radius: 10)
+                .shadow(radius: 20)
     }
 }
 
