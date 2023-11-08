@@ -40,7 +40,6 @@ struct CommentContainer<Destination: View>: View {
             Text(viewState.comment.randomElement() ?? "Error")
                 .padding(.horizontal)
                 .font(.title2)
-                .font(.callout)
                 .fontWeight(.bold)
                 .multilineTextAlignment (.center)
                 .monospaced()
