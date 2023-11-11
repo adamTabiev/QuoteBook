@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1A39EB42AFA94AD0082FA51 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A39EB32AFA94AD0082FA51 /* Test.swift */; };
-		F1A39EB72AFACD900082FA51 /* CommentContainerViewSate+sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A39EB62AFACD900082FA51 /* CommentContainerViewSate+sample.swift */; };
+		F17A2B412AFEC0D100C1344C /* HumanBiografiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A2B402AFEC0D100C1344C /* HumanBiografiView.swift */; };
+		F17A2B452AFF85CD00C1344C /* CommentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A2B442AFF85CD00C1344C /* CommentContainerView.swift */; };
 		F1A39EB92AFBA1560082FA51 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */; };
 		F1A9C8BB2AF01F3800A9D319 /* QuoteBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */; };
 		F1A9C8BD2AF01F3800A9D319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8BC2AF01F3800A9D319 /* ContentView.swift */; };
@@ -18,13 +18,12 @@
 		F1A9C8CE2AF02B6100A9D319 /* HumanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8CD2AF02B6100A9D319 /* HumanViewModel.swift */; };
 		F1A9C8D02AF02BE500A9D319 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8CF2AF02BE500A9D319 /* Data.swift */; };
 		F1A9C8D22AF03FF600A9D319 /* HumanCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8D12AF03FF600A9D319 /* HumanCircleView.swift */; };
-		F1A9C8D52AF0621C00A9D319 /* CommentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8D42AF0621C00A9D319 /* CommentContainer.swift */; };
 		F1E91A772AF7F79900E7A8D4 /* HumanCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E91A762AF7F79900E7A8D4 /* HumanCommentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F1A39EB32AFA94AD0082FA51 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		F1A39EB62AFACD900082FA51 /* CommentContainerViewSate+sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentContainerViewSate+sample.swift"; sourceTree = "<group>"; };
+		F17A2B402AFEC0D100C1344C /* HumanBiografiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBiografiView.swift; sourceTree = "<group>"; };
+		F17A2B442AFF85CD00C1344C /* CommentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentContainerView.swift; sourceTree = "<group>"; };
 		F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		F1A9C8B72AF01F3800A9D319 /* QuoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBookApp.swift; sourceTree = "<group>"; };
@@ -35,7 +34,6 @@
 		F1A9C8CD2AF02B6100A9D319 /* HumanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanViewModel.swift; sourceTree = "<group>"; };
 		F1A9C8CF2AF02BE500A9D319 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F1A9C8D12AF03FF600A9D319 /* HumanCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCircleView.swift; sourceTree = "<group>"; };
-		F1A9C8D42AF0621C00A9D319 /* CommentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentContainer.swift; sourceTree = "<group>"; };
 		F1E91A762AF7F79900E7A8D4 /* HumanCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCommentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,14 +48,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F1A39EB52AFACCD10082FA51 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				F1A39EB62AFACD900082FA51 /* CommentContainerViewSate+sample.swift */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
 		F1A9C8AE2AF01F3800A9D319 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */,
+				F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */,
 				F1A9C8D32AF04A7900A9D319 /* Data */,
 				F1A9C8CA2AF0212700A9D319 /* Views */,
 				F1A9C8C92AF0211B00A9D319 /* ViewModel */,
 				F1A9C8C82AF0210800A9D319 /* Model */,
-				F1A39EB52AFACCD10082FA51 /* Samples */,
 				F1A9C8BE2AF01F3B00A9D319 /* Assets.xcassets */,
 				F1A9C8C02AF01F3B00A9D319 /* Preview Content */,
 			);
@@ -118,10 +108,9 @@
 			children = (
 				F1A9C8BC2AF01F3800A9D319 /* ContentView.swift */,
 				F1A9C8D12AF03FF600A9D319 /* HumanCircleView.swift */,
-				F1A9C8D42AF0621C00A9D319 /* CommentContainer.swift */,
 				F1E91A762AF7F79900E7A8D4 /* HumanCommentView.swift */,
-				F1A39EB32AFA94AD0082FA51 /* Test.swift */,
-				F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */,
+				F17A2B402AFEC0D100C1344C /* HumanBiografiView.swift */,
+				F17A2B442AFF85CD00C1344C /* CommentContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,16 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E91A772AF7F79900E7A8D4 /* HumanCommentView.swift in Sources */,
+				F17A2B412AFEC0D100C1344C /* HumanBiografiView.swift in Sources */,
 				F1A9C8D22AF03FF600A9D319 /* HumanCircleView.swift in Sources */,
-				F1A39EB42AFA94AD0082FA51 /* Test.swift in Sources */,
 				F1A9C8CE2AF02B6100A9D319 /* HumanViewModel.swift in Sources */,
 				F1A39EB92AFBA1560082FA51 /* SplashScreenView.swift in Sources */,
 				F1A9C8D02AF02BE500A9D319 /* Data.swift in Sources */,
-				F1A9C8D52AF0621C00A9D319 /* CommentContainer.swift in Sources */,
+				F17A2B452AFF85CD00C1344C /* CommentContainerView.swift in Sources */,
 				F1A9C8BD2AF01F3800A9D319 /* ContentView.swift in Sources */,
 				F1A9C8CC2AF02AB100A9D319 /* HumanModel.swift in Sources */,
 				F1A9C8BB2AF01F3800A9D319 /* QuoteBookApp.swift in Sources */,
-				F1A39EB72AFACD900082FA51 /* CommentContainerViewSate+sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

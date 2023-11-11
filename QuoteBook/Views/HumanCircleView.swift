@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct HumanCircleView: View {
-    let image: Image
+    let imageName: String
     let size: Int
     
     var body: some View {
         VStack(spacing: 20) {
-            Image("Платон")
+            Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: CGFloat(size), height: CGFloat(size))
@@ -26,5 +26,5 @@ struct HumanCircleView: View {
 
 
 #Preview {
-    HumanCircleView(image: Image("Платон"), size: 300)
+    HumanCircleView(imageName: "Платон", size: 300)
 }

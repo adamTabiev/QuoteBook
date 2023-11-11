@@ -1,13 +1,13 @@
 //
-//  CommentContainer.swift
+//  CommentContainerView.swift
 //  QuoteBook
 //
-//  Created by Адам Табиев on 30.10.2023.
+//  Created by Адам Табиев on 11.11.2023.
 //
 
 import SwiftUI
 
-struct CommentContainer<Destination: View>: View {
+struct CommentContainerView<Destination: View>: View {
     struct ViewState {
         var imageName: String { return name }
         let name: String
@@ -15,13 +15,12 @@ struct CommentContainer<Destination: View>: View {
         let briefBio: String
         let comment: [String]
     }
-    
     let viewState: ViewState
     
     var body: some View {
         VStack {
-            HumanCircleView(image: Image(viewState.imageName), size: 250)
-                .padding(.top)
+            HumanCircleView(imageName: viewState.imageName, size: 300)
+                .padding()
             
             NavigationLink(destination: viewState.destination) {
                 Text(viewState.name)
@@ -57,7 +56,7 @@ struct CommentContainer<Destination: View>: View {
 
 #Preview {
     NavigationView {
-        CommentContainer(viewState: CommentContainer.ViewState(
+        CommentContainerView(viewState: CommentContainerView.ViewState(
             name: "Платон",
             destination: Text("Biography View"),
             briefBio: "древнегреческий философ 5 век до н.э., ученик Сократа, учитель Аристотеля.",
@@ -67,4 +66,3 @@ struct CommentContainer<Destination: View>: View {
         ))
     }
 }
-
