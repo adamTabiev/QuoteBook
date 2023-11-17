@@ -14,7 +14,7 @@ struct MainScreen: View {
                 NavigationLink("Авторы", destination: PeopleListView())
                     .font(.title)
                 Divider()
-                NavigationLink("Цитаты", destination: EmptyView())
+                NavigationLink("Цитаты", destination: EmptyView().navigationTitle("Цитаты"))
                     .font(.title)
             }
             .navigationBarHidden(true)

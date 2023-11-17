@@ -33,5 +33,6 @@ struct PeopleListView: View {
 #Preview {
     NavigationView {
         PeopleListView()
+            .toolbarTitleDisplayMode(.inline)
     }
 }
