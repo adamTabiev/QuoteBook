@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17A1F972B077E8300AD7F1D /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1F962B077E8300AD7F1D /* PeopleListView.swift */; };
 		F1A39EB92AFBA1560082FA51 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */; };
 		F1A9C8BB2AF01F3800A9D319 /* QuoteBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */; };
 		F1A9C8BD2AF01F3800A9D319 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8BC2AF01F3800A9D319 /* MainScreen.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F17A1F962B077E8300AD7F1D /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		F1A9C8B72AF01F3800A9D319 /* QuoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A9C8BA2AF01F3800A9D319 /* QuoteBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBookApp.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F1A9C8BC2AF01F3800A9D319 /* MainScreen.swift */,
+				F17A1F962B077E8300AD7F1D /* PeopleListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A9C8CE2AF02B6100A9D319 /* HumanViewModel.swift in Sources */,
+				F17A1F972B077E8300AD7F1D /* PeopleListView.swift in Sources */,
 				F1A39EB92AFBA1560082FA51 /* SplashScreenView.swift in Sources */,
 				F1A9C8D02AF02BE500A9D319 /* Data.swift in Sources */,
 				F1A9C8BD2AF01F3800A9D319 /* MainScreen.swift in Sources */,
