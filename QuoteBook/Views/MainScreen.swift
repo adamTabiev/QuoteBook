@@ -11,7 +11,7 @@ struct MainScreen: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 18) {
-                NavigationLink("Авторы", destination: EmptyView())
+                NavigationLink("Авторы", destination: PeopleListView())
                     .font(.title)
                 Divider()
                 NavigationLink("Цитаты", destination: EmptyView())
