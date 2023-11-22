@@ -13,7 +13,7 @@ struct MainScreen: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 18) {
-                NavigationLink("Авторы", destination: PeopleListView())
+                NavigationLink("Авторы", destination: PeopleListView(vm: HumanViewModel()))
                     .font(.title)
                 Divider()
                 NavigationLink("Цитаты", destination: CommentView(vm: HumanViewModel()).navigationTitle("Цитаты"))

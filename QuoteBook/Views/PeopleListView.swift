@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PeopleListView: View {
-    @ObservedObject var vm = HumanViewModel()
+    @ObservedObject var vm: HumanViewModel
     
     private let _adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
@@ -33,7 +33,7 @@ struct PeopleListView: View {
 
 #Preview {
     NavigationView {
-        PeopleListView()
+        PeopleListView(vm: HumanViewModel())
             .toolbarTitleDisplayMode(.inline)
     }
 }

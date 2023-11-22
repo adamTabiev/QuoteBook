@@ -20,9 +20,19 @@ struct CommentView: View {
                         briefBio: human.briefBio,
                         comment: human.comment.randomElement() ?? ""
                     ))
+                    .containerRelativeFrame(.horizontal, count: 1, spacing: 1.0)
+                    .scrollTransition { content, phase in
+                        content
+                            .opacity(phase.isIdentity ? 1 : 0.3)
+                            .scaleEffect(x: phase.isIdentity ? 1.0 : 0.7,
+                                         y: phase.isIdentity ? 1.0 : 0.7)
+                            .offset(y: phase.isIdentity ? 0 : 50)
+                    }
                 }
             }
+            .scrollTargetLayout()
         }
+        .scrollTargetBehavior(.viewAligned)
     }
 }
 
