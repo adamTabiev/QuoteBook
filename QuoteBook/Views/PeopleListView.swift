@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct PeopleListView: View {
-    @StateObject var vm = HumanViewModel()
+    @ObservedObject var vm = HumanViewModel()
+    
     private let _adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: _adaptiveColumns, spacing: 10) {
                 ForEach(vm.humans) { human in
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: CommentView(vm: HumanViewModel())) {
                         VStack {
                             HumanCircleView(viewState: HumanCircleView.ViewState(imageName: human.name, size: 150))
                             Text(human.name)
