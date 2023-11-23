@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F124C6112B0E762B00805217 /* CommentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6102B0E762B00805217 /* CommentContainerView.swift */; };
 		F124C6132B0E78A800805217 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6122B0E78A800805217 /* CommentView.swift */; };
+		F124C6382B0FDDA700805217 /* CustomScrollAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6372B0FDDA700805217 /* CustomScrollAnimationModifier.swift */; };
 		F17A1F972B077E8300AD7F1D /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1F962B077E8300AD7F1D /* PeopleListView.swift */; };
 		F17A1F992B07852700AD7F1D /* HumanCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1F982B07852700AD7F1D /* HumanCircleView.swift */; };
 		F1A39EB92AFBA1560082FA51 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F124C6102B0E762B00805217 /* CommentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentContainerView.swift; sourceTree = "<group>"; };
 		F124C6122B0E78A800805217 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		F124C6372B0FDDA700805217 /* CustomScrollAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollAnimationModifier.swift; sourceTree = "<group>"; };
 		F17A1F962B077E8300AD7F1D /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		F17A1F982B07852700AD7F1D /* HumanCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCircleView.swift; sourceTree = "<group>"; };
 		F1A39EB82AFBA1560082FA51 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F124C6362B0FD6F500805217 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F124C6372B0FDDA700805217 /* CustomScrollAnimationModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		F1A9C8AE2AF01F3800A9D319 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 				F1A9C8CA2AF0212700A9D319 /* Views */,
 				F1A9C8C92AF0211B00A9D319 /* ViewModel */,
 				F1A9C8C82AF0210800A9D319 /* Model */,
+				F124C6362B0FD6F500805217 /* ViewModifiers */,
 				F1A9C8BE2AF01F3B00A9D319 /* Assets.xcassets */,
 				F1A9C8C02AF01F3B00A9D319 /* Preview Content */,
 			);
@@ -199,6 +210,7 @@
 				F1A9C8D02AF02BE500A9D319 /* Data.swift in Sources */,
 				F1A9C8BD2AF01F3800A9D319 /* MainScreen.swift in Sources */,
 				F1A9C8CC2AF02AB100A9D319 /* HumanModel.swift in Sources */,
+				F124C6382B0FDDA700805217 /* CustomScrollAnimationModifier.swift in Sources */,
 				F17A1F992B07852700AD7F1D /* HumanCircleView.swift in Sources */,
 				F1A9C8BB2AF01F3800A9D319 /* QuoteBookApp.swift in Sources */,
 				F124C6132B0E78A800805217 /* CommentView.swift in Sources */,
