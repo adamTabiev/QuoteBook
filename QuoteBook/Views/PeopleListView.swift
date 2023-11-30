@@ -9,20 +9,24 @@ import SwiftUI
 
 struct PeopleListView: View {
     @ObservedObject var vm: HumanViewModel
+    @State var selectedHumanIndex: Int? = nil // Добавляем опциональный Int для хранения выбранного индекса
     
     private let _adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: _adaptiveColumns, spacing: 10) {
-                ForEach(vm.humans) { human in
-                    NavigationLink(destination: CommentView(vm: HumanViewModel())) {
+                ForEach(vm.humans.indices, id: \.self) { index in
+                    NavigationLink(destination: CommentView(vm: HumanViewModel(), selectedHumanIndex: $selectedHumanIndex), tag: index, selection: $selectedHumanIndex) {
                         VStack {
-                            HumanCircleView(viewState: HumanCircleView.ViewState(imageName: human.name, size: 150))
-                            Text(human.name)
+                            HumanCircleView(viewState: HumanCircleView.ViewState(imageName: vm.humans[index].name, size: 150))
+                            Text(vm.humans[index].name)
                                 .font(.title2)
                         }
                         .padding()
+                        .onTapGesture {
+                            selectedHumanIndex = index // Обновляем selectedHumanIndex при нажатии на элемент
+                        }
                     }
                 }
             }

@@ -12,7 +12,7 @@ struct HumanModel: Identifiable {
     var name: String
     var briefBio: String
     var biography: String?
-    var comment: [String] = []
+    var comments: [String] = []
     
     var  imageName: String { return name }
 }
