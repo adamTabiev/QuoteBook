@@ -30,5 +30,5 @@ struct HumanCircleView: View {
 
 
 #Preview {
-    HumanCircleView(viewState: HumanCircleView.ViewState(imageName: "Платон", size: 300))
-}
+    HumanCircleView(viewState: HumanCircleView.ViewState(imageName: "Платон", size: 250))
+} 

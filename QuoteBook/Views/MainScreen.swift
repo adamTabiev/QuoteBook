@@ -13,10 +13,10 @@ struct MainScreen: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 18) {
-                NavigationLink("Авторы", destination: PeopleListView(vm: HumanViewModel()))
+                NavigationLink("Авторы", destination: PeopleListView(vm: vm))
                     .font(.title)
                 Divider()
-                NavigationLink("Цитаты", destination: CommentView(vm: HumanViewModel()).navigationTitle("Цитаты"))
+                NavigationLink("Цитаты", destination: RandomCommentView(vm: HumanViewModel()).navigationTitle("Цитаты"))
                     .font(.title)
             }
             .navigationBarHidden(true)
