@@ -1,27 +1,27 @@
 //
-//  CommentView.swift
+//  RandomCommentView.swift
 //  QuoteBook
 //
-//  Created by Адам Табиев on 22.11.2023.
+//  Created by Адам Табиев on 30.11.2023.
 //
 
 import SwiftUI
 
-struct CommentView: View {
+struct RandomCommentView: View {
     @ObservedObject var vm: HumanViewModel
-    @Binding var selectedHumanIndex: Int?
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                if let selectedIndex = selectedHumanIndex {
-                    let shuffledComments = vm.humans[selectedIndex].comments.shuffled()
-
-                    ForEach(shuffledComments, id: \.self) { comment in
+                let allComments = vm.humans.flatMap { $0.comments }
+                let shuffledComments = allComments.shuffled()
+                
+                ForEach(shuffledComments, id: \.self) { comment in
+                    if let human = vm.humans.first(where: { $0.comments.contains(comment) }) {
                         CommentContainerView(viewState: CommentContainerView.ViewState(
-                            name: vm.humans[selectedIndex].name,
+                            name: human.name,
                             destination: Text("Biography View"),
-                            briefBio: vm.humans[selectedIndex].briefBio,
+                            briefBio: human.briefBio,
                             comment: comment
                         ))
                         .containerRelativeFrame(.horizontal, count: 1, spacing: 1.0)
@@ -37,6 +37,7 @@ struct CommentView: View {
 
 #Preview {
     NavigationView {
-        CommentView(vm: HumanViewModel(), selectedHumanIndex: .constant(0))
+        RandomCommentView(vm: HumanViewModel())
     }
 }
+
