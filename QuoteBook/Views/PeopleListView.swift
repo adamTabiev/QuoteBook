@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PeopleListView: View {
     @ObservedObject var vm: HumanViewModel
-    @State var selectedHumanIndex: Int? = nil // Добавляем опциональный Int для хранения выбранного индекса
+    @State var selectedHumanIndex: Int? = nil
     
     private let _adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
