@@ -15,44 +15,49 @@ struct CommentContainerView<Destination: View>: View {
         let briefBio: String
         let comment: String
     }
+    
     let viewState: ViewState
+    @State private var fontSize: CGFloat = UIFont.labelFontSize
     
     var body: some View {
-        VStack {
-            HumanCircleView(viewState: HumanCircleView.ViewState(imageName: viewState.imageName, size: 300))
-                .padding()
-            
-            NavigationLink(destination: viewState.destination) {
-                Text(viewState.name)
-                    .font(.title)
-            }
-            .frame(width: 350, height: 50)
-            
-            Text(viewState.briefBio)
-                .font(.subheadline)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-                .frame(width: 350, height: 50)
-            
-            Divider()
-            
-            Text(viewState.comment)
-                .padding(.horizontal)
-                .font(.title2)
-                .fontWeight(.bold)
-                .multilineTextAlignment (.center)
-                .monospaced()
-                .frame(width: 350, height: 250)
-        }
-        .background(Color.white)
-        .cornerRadius(18)
-        .overlay(
-            RoundedRectangle(cornerRadius: 18)
-                .stroke(Color(.gray), lineWidth: 0.2)
-        )
-        .padding()
+        RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.gray, lineWidth: 0.4)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .overlay(
+                VStack(spacing: 10) {
+                    HumanCircleView(viewState: HumanCircleView.ViewState(imageName: viewState.imageName, size: 200))
+                        .padding()
+                    
+                    NavigationLink(destination: viewState.destination) {
+                        Text(viewState.name)
+                            .font(.title)
+                    }
+                    
+                    Text(viewState.briefBio)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                    
+                    Divider()
+                    
+                    Text(viewState.comment)
+                        .padding(.horizontal)
+                        .font(.system(size: fontSize))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .monospaced()
+                        .frame(maxHeight: .infinity)
+                        .onAppear {
+                            fontSize = calculateFontSize(for: viewState.comment)
+                        }
+                    
+                }
+            )
+            .padding()
     }
 }
+
+
 
 #Preview {
     NavigationView {
@@ -64,5 +69,3 @@ struct CommentContainerView<Destination: View>: View {
         ))
     }
 }
-
-
