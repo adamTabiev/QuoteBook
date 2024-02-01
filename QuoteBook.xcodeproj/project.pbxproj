@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F119AC332B4F07B300F0DFC6 /* calculateFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119AC322B4F07B300F0DFC6 /* calculateFontSize.swift */; };
 		F124C6112B0E762B00805217 /* CommentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6102B0E762B00805217 /* CommentContainerView.swift */; };
 		F124C6132B0E78A800805217 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6122B0E78A800805217 /* CommentView.swift */; };
 		F124C6382B0FDDA700805217 /* CustomScrollAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124C6372B0FDDA700805217 /* CustomScrollAnimationModifier.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F119AC322B4F07B300F0DFC6 /* calculateFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateFontSize.swift; sourceTree = "<group>"; };
 		F124C6102B0E762B00805217 /* CommentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentContainerView.swift; sourceTree = "<group>"; };
 		F124C6122B0E78A800805217 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		F124C6372B0FDDA700805217 /* CustomScrollAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollAnimationModifier.swift; sourceTree = "<group>"; };
@@ -40,7 +38,7 @@
 		F1A9C8C12AF01F3B00A9D319 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1A9C8CB2AF02AB100A9D319 /* HumanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanModel.swift; sourceTree = "<group>"; };
 		F1A9C8CD2AF02B6100A9D319 /* HumanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanViewModel.swift; sourceTree = "<group>"; };
-		F1A9C8CF2AF02BE500A9D319 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F1A9C8CF2AF02BE500A9D319 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 		F119AC312B4F077200F0DFC6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F119AC322B4F07B300F0DFC6 /* calculateFontSize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F119AC332B4F07B300F0DFC6 /* calculateFontSize.swift in Sources */,
 				F1A9C8CE2AF02B6100A9D319 /* HumanViewModel.swift in Sources */,
 				F154181F2B18AAF4001EA361 /* RandomCommentView.swift in Sources */,
 				F17A1F972B077E8300AD7F1D /* PeopleListView.swift in Sources */,

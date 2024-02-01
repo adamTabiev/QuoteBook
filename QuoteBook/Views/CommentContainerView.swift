@@ -42,14 +42,10 @@ struct CommentContainerView<Destination: View>: View {
                     
                     Text(viewState.comment)
                         .padding(.horizontal)
-                        .font(.system(size: fontSize))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .monospaced()
                         .frame(maxHeight: .infinity)
-                        .onAppear {
-                            fontSize = calculateFontSize(for: viewState.comment)
-                        }
                     
                 }
             )
