@@ -51,6 +51,9 @@
 		F17B1FCC2C5BC71D00CD6C23 /* QuoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				F17B1FDD2C5BCA5D00CD6C23 /* ViewModels */,
+				F17B1FDC2C5BCA3800CD6C23 /* ViewModifiers */,
+				F17B1FDB2C5BCA2100CD6C23 /* Views */,
 				F17B1FCD2C5BC71D00CD6C23 /* QuoteBookApp.swift */,
 				F17B1FCF2C5BC71D00CD6C23 /* ContentView.swift */,
 				F17B1FD12C5BC71F00CD6C23 /* Assets.xcassets */,
@@ -65,6 +68,27 @@
 				F17B1FD42C5BC71F00CD6C23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F17B1FDB2C5BCA2100CD6C23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F17B1FDC2C5BCA3800CD6C23 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F17B1FDD2C5BCA5D00CD6C23 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
