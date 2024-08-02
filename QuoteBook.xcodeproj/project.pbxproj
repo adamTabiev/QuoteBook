@@ -21,6 +21,7 @@
 		F17B1FF22C5BCE3800CD6C23 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B1FEC2C5BCE3800CD6C23 /* SplashScreenView.swift */; };
 		F17B1FF62C5BCE5D00CD6C23 /* HumanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B1FF52C5BCE5D00CD6C23 /* HumanModel.swift */; };
 		F17B1FF82C5BCE6400CD6C23 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B1FF72C5BCE6400CD6C23 /* Data.swift */; };
+		F17B1FFA2C5BF5AC00CD6C23 /* BiographyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B1FF92C5BF5AC00CD6C23 /* BiographyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F17B1FEC2C5BCE3800CD6C23 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		F17B1FF52C5BCE5D00CD6C23 /* HumanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumanModel.swift; sourceTree = "<group>"; };
 		F17B1FF72C5BCE6400CD6C23 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F17B1FF92C5BF5AC00CD6C23 /* BiographyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,10 @@
 		F17B1FDB2C5BCA2100CD6C23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F17B1FEB2C5BCE3700CD6C23 /* CommentView.swift */,
 				F17B1FE92C5BCE3700CD6C23 /* MainScreen.swift */,
 				F17B1FE82C5BCE3700CD6C23 /* PeopleListView.swift */,
+				F17B1FEB2C5BCE3700CD6C23 /* CommentView.swift */,
+				F17B1FF92C5BF5AC00CD6C23 /* BiographyView.swift */,
 				F17B1FEA2C5BCE3700CD6C23 /* RandomCommentView.swift */,
 				F17B1FEC2C5BCE3800CD6C23 /* SplashScreenView.swift */,
 			);
@@ -210,6 +213,7 @@
 				F17B1FEF2C5BCE3800CD6C23 /* MainScreen.swift in Sources */,
 				F17B1FEE2C5BCE3800CD6C23 /* PeopleListView.swift in Sources */,
 				F17B1FE22C5BCE0700CD6C23 /* CommentContainerView.swift in Sources */,
+				F17B1FFA2C5BF5AC00CD6C23 /* BiographyView.swift in Sources */,
 				F17B1FF22C5BCE3800CD6C23 /* SplashScreenView.swift in Sources */,
 				F17B1FF62C5BCE5D00CD6C23 /* HumanModel.swift in Sources */,
 				F17B1FE72C5BCE2900CD6C23 /* HumanViewModel.swift in Sources */,
