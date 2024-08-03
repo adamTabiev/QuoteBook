@@ -20,7 +20,12 @@ struct RandomCommentView: View {
                     if let human = vm.humans.first(where: { $0.comments.contains(comment) }) {
                         CommentContainerView(viewState: CommentContainerView.ViewState(
                             name: human.name,
-                            destination: Text("Biography View"),
+                            destination: BiographyView(
+                                viewState: BiographyView.ViewState(
+                                    name: human.name,
+                                    biography: human.biography
+                                )
+                            ),
                             briefBio: human.briefBio,
                             comment: comment
                         ))
