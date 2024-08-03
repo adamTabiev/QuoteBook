@@ -6,13 +6,9 @@
 //
 
 import SwiftUI
-import Firebase
 
 @main
 struct QuoteBookApp: App {
-    init() {
-           FirebaseApp.configure()
-       }
     
     var body: some Scene {
         WindowGroup {

@@ -18,6 +18,7 @@ struct RandomCommentView: View {
                 
                 ForEach(shuffledComments, id: \.self) { comment in
                     if let human = vm.humans.first(where: { $0.comments.contains(comment) }) {
+                        
                         CommentContainerView(viewState: CommentContainerView.ViewState(
                             name: human.name,
                             destination: BiographyView(

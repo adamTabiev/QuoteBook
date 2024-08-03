@@ -16,7 +16,7 @@ struct CommentView: View {
             HStack {
                 if let selectedIndex = selectedHumanIndex {
                     let shuffledComments = vm.humans[selectedIndex].comments.shuffled()
-
+                    
                     ForEach(shuffledComments, id: \.self) { comment in
                         CommentContainerView(
                             viewState: CommentContainerView.ViewState(
