@@ -14,7 +14,7 @@ struct CommentView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                if let selectedIndex = selectedHumanIndex {
+                if let selectedIndex = selectedHumanIndex, selectedIndex < vm.humans.count {
                     let shuffledComments = vm.humans[selectedIndex].comments.shuffled()
                     
                     ForEach(shuffledComments, id: \.self) { comment in
