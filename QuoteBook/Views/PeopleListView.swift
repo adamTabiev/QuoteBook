@@ -34,6 +34,7 @@ struct PeopleListView: View {
             }
         }
         .navigationTitle("Авторы")
+        .background(.secondary.opacity(0.2))
     }
 }
 

@@ -39,6 +39,8 @@ struct CommentView: View {
             .scrollTargetLayout()
         }
         .scrollTargetBehavior(.viewAligned)
+        .background(.secondary.opacity(0.2))
+       // .shadow(color: .black.opacity(0.2), radius: 8, x: 5, y: 8)
     }
 }
 

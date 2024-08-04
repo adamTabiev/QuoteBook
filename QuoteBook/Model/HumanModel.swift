@@ -6,9 +6,20 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct HumanModel: Identifiable {
-    var id = UUID()
+//struct HumanModel: Identifiable, Codable {
+//    var id = UUID()
+//    var name: String
+//    var briefBio: String
+//    var biography: String?
+//    var comments: [String] = []
+//    
+//    var  imageName: String { return name }
+//}
+
+struct HumanModel: Identifiable, Codable {
+    @DocumentID var id: String?
     var name: String
     var briefBio: String
     var biography: String?
